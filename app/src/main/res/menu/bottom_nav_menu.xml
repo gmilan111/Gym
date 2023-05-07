@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/food"
+        android:icon="@drawable/baseline_fastfood_24"
+        android:title="Food"/>
+
+    <item
+        android:id="@+id/placeholder"
+        android:title=""
+        />
+
+
+    <item
+        android:id="@+id/stopwatch"
+        android:icon="@drawable/baseline_timer_24"
+        android:title="Stopwatch"/>
+
+    <item
+        android:id="@+id/profil"
+        android:icon="@drawable/baseline_person_outline_24"
+        android:title="Profil"/>
+
+</menu>

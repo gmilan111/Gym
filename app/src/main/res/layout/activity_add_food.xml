@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addFood"
+            android:text="Létrehozás"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="75dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etel_nev"
+            android:layout_gravity="center_horizontal"
+            android:hint="Étel neve"
+            android:layout_below="@+id/addFood"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textSize="21sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mennyiseg"
+            android:layout_gravity="center_horizontal"
+            android:hint="Mennyiség (g)"
+            android:layout_below="@+id/etel_nev"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:textSize="21sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kaloria_szam"
+            android:layout_gravity="center_horizontal"
+            android:hint="Kalóriaszám"
+            android:layout_below="@+id/mennyiseg"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:textSize="21sp"
+            />
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/bottomAppBar"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp"
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomNaqvigationView"
+            android:layout_marginRight="16dp"
+            app:menu="@menu/bottom_nav_menu"
+            android:background="@drawable/transparent_background"
+            />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:src="@drawable/baseline_check_24"
+        app:layout_anchor="@id/bottomAppBar"
+        android:contentDescription="TODO" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
